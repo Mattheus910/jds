@@ -79,14 +79,28 @@ iframe {
     height: 90%;
 }
 
-
-
 footer {
-    margin-top: 30px;
+    background-color: blue;
     text-align: center;
 }
 
-footer > picture > a > img {
+#whatsapp {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#whatsapp > picture > a > img {
     width: 10rem;
 }
 
+#contatos {
+    margin: auto;
+    width: 70%;
+    text-align: start;
+    font-size: 13px;
+}
+
+#contatos > ol > li {
+    margin: 0;
+    color: #fff;
+}
