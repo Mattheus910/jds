@@ -20,6 +20,7 @@ header {
 }
 
 nav {
+    display: none;
     background-color: blue;
     margin: 1rem 0;
 }
