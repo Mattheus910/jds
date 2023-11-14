@@ -19,20 +19,33 @@ header {
     color: #fff;
 }
 
+#menu {
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+    position: relative;
+}
+
 nav {
     display: none;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
     background-color: blue;
-    margin: 1rem 0;
+    position: absolute;
+    right: 24px;
+    top: 27px;
 }
 
-ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+#menu > picture > img {
+    width: 30px;
 }
 
-li {
+#menu #nav ul li {
+    font-size: 14px;
     list-style: none;
-    margin: 1rem;
+    padding: 5px;
 }
 
 a {
@@ -102,6 +115,7 @@ footer {
 }
 
 #contatos > ol > li {
+    list-style: none;
     margin: 0;
     color: #fff;
 }
