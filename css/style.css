@@ -57,7 +57,7 @@ a {
 #veiculos {
     display: flex;
     height: 300px;
-    margin: 10px 0px;
+    margin-bottom: 10px;
     gap: 2px;
 }
 
@@ -71,6 +71,7 @@ a {
     font-weight: bold;
     font-size: 1rem;
     padding-bottom: 59px;
+    border-radius: 5px;
 }
 
 #carro {
