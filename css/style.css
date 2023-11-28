@@ -137,18 +137,50 @@ h3 {
 }
 
 .servico {
+    display: flex;
+    align-items: center;
     background-color: rgb(226, 225, 224);
-    margin: 20px auto;
-    width: 80%;
-    height: 200px;
-    border-radius: 5px 30px;
-    padding: 10px;
+    margin-bottom: 20px;
+    padding: 5px;
 }
 
+.wpp {
+    display: flex;
+    background-color: #25d366;
+    width: 50%;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.texto-1, .texto-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9e9c9c;
+    text-align: center;
+}
+
+.texto-1 { 
+    padding: 5px 5px 5px 50px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+    margin-left: 5px;
+}
+
+.texto-2 {
+    padding: 5px 50px 5px 10px;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+}
+
+
 .marcas {
-    background-color: rgb(228, 228, 228);
+    display: flex;
+    flex-direction: column;
     margin: 20px auto;
     width: 50%;
+    gap: 10px;
+    align-items: center;
 }
 
 .marcas picture {
@@ -157,6 +189,30 @@ h3 {
 
 .marcas img {
     width: 100%;
+}
+
+.marcas a {
+    display: flex;
+    width: 150px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #575454;
+    border-radius: 3px;
+}
+
+#jds{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#jds section {
+    text-align: center;
+    width: 50%;
+    margin-bottom: 15px;
 }
 
 #maps {
@@ -171,28 +227,22 @@ iframe {
 }
 
 footer {
+    display: flex;
+    padding: 20px;
     background-color: #000;
     text-align: center;
-}
-
-#whatsapp {
-    text-align: center;
-    margin: 20px 0;
-}
-
-#whatsapp > picture > a > img {
-    width: 10rem;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
 }
 
 #contatos {
     margin: auto;
-    width: 70%;
+    width: 60%;
     text-align: start;
-    font-size: 13px;
 }
 
 #contatos > ol > li {
     list-style: none;
     margin: 0;
-    color: #fff;
 }
