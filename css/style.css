@@ -67,9 +67,13 @@ a {
     align-items: end;
     color: #fff;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding-bottom: 59px;
     border-radius: 5px;
+}
+
+.tipo p {
+    text-shadow: 1px 1px 0px #000;
 }
 
 #carro {
