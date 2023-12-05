@@ -23,7 +23,6 @@ header img {
     display: block;
 }
 
-
 #menu {
     display: flex;
     justify-content: end;
@@ -35,12 +34,12 @@ nav {
     display: none;
     width: 200px;
     height: 200px;
-    align-items: center;
-    justify-content: center;
     background-color: blue;
     position: absolute;
     right: 24px;
     top: 27px;
+    align-items: center;
+    justify-content: center;
 }
 
 #menu > picture > img {
@@ -128,19 +127,11 @@ a {
     padding: 1rem;
 }
 
-#carrossel {
+#carrossel, #carrossel > img {
     width: 100%;
 }
 
-#carrossel > img {
-    width: 100%;
-}
-
-#sobre > h1{
-    text-align: center;
-}
-
-h2, h3, h4 {
+#sobre > h1, h2, h3, h4{
     text-align: center;
 }
 
@@ -151,7 +142,6 @@ h3 {
 .servico {
     display: flex;
     align-items: center;
-    background-color: rgb(226, 225, 224);
     margin-bottom: 20px;
     padding: 5px;
 }
@@ -159,8 +149,8 @@ h3 {
 .wpp {
     display: flex;
     background-color: #25d366;
-    width: 50%;
-    height: 25px;
+    width: 200px;
+    height: 45px;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
@@ -195,23 +185,8 @@ h3 {
     align-items: center;
 }
 
-.marcas picture {
+.marcas picture, .marcas img{
     width: 100%;
-}
-
-.marcas img {
-    width: 100%;
-}
-
-.marcas a {
-    display: flex;
-    width: 150px;
-    height: 25px;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    background-color: #575454;
-    border-radius: 3px;
 }
 
 #jds{
@@ -240,21 +215,107 @@ iframe {
 
 footer {
     display: flex;
+    justify-content: space-between;
     padding: 20px;
     background-color: #000;
-    text-align: center;
     align-items: center;
     color: #fff;
     font-size: 12px;
 }
 
-#contatos {
-    margin: auto;
-    width: 60%;
-    text-align: start;
-}
-
 #contatos > ol > li {
     list-style: none;
     margin: 0;
+}
+
+@media screen and (min-width: 980px) {
+    #menu{
+        justify-content: center;
+    }
+
+    nav{
+        display: flex;
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: #fff;
+    }
+
+    #hamburguer{
+        display: none;
+    }
+
+    #menu nav ul {
+        display: flex;
+    }
+
+    #menu nav ul li a {
+        color: #000;
+        font-size: 16px;
+
+    }
+
+    #veiculos{
+        height: 600px;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    #servicos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .servico{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .texto-1, .texto-2{
+        height: 200px;
+        width: 500px;
+    }
+
+    #produtos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .marcas{
+        height: 300px;
+    }
+
+    .marcas picture {
+        height: 90%;
+        display: flex;
+    }
+
+    #sobre {
+        margin: auto;
+        width: 80%;
+        text-align: center;
+    }
+
+    #sobre img {
+        width: 30%;
+    }
+
+    #sobre p {
+        width: 70%;
+        margin: auto;
+    }
+
+    #maps {
+        width: 800px;
+        height: 500px;
+        margin: auto;
+    }
+
+    footer{
+        justify-content: space-evenly;
+    }
+
 }
