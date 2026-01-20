@@ -1,7 +1,7 @@
 {
   "name": "JDS Baterias",
   "short_name": "JDS",
-  "start_url": "./index.html",
+  "start_url": "/jds/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
