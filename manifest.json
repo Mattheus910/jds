@@ -8,12 +8,12 @@
   "description": "JDS Baterias - Venda e instalação de baterias automotivas",
   "icons": [
     {
-      "src": "imagens/icon-192.png",
+      "src": "imagens/bannerJds.jpeg",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "imagens/icon-512.png",
+      "src": "imagens/bannerJds.jpeg",
       "sizes": "512x512",
       "type": "image/png"
     }
